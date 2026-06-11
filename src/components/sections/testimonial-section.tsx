@@ -12,11 +12,10 @@ export function TestimonialSection() {
     >
       <SectionHeader>
         <h2 className="text-3xl md:text-4xl font-medium tracking-tighter text-center text-balance">
-          Empower Your Workflow with AI
+          Ils ont adopté RepairFlow
         </h2>
         <p className="text-muted-foreground text-center text-balance font-medium">
-          Ask your AI Agent for real-time collaboration, seamless integrations,
-          and actionable insights to streamline your operations.
+          Découvrez ce que disent les réparateurs informatique qui utilisent RepairFlow au quotidien.
         </p>
       </SectionHeader>
       <SocialProofTestimonials testimonials={testimonials} />
