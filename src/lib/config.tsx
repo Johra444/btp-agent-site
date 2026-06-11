@@ -29,20 +29,20 @@ export const Highlight = ({
 export const BLUR_FADE_DELAY = 0.15;
 
 export const siteConfig = {
-  name: "DevisFlow",
-  description: "L'agent IA qui génère vos devis et factures BTP en 30 secondes.",
+  name: "RepairFlow",
+  description: "L'agent IA qui génère vos devis réparation informatique en 30 secondes via WhatsApp.",
   cta: "Essayer Gratuitement",
   url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
   keywords: [
-    "Devis BTP",
-    "Facture Artisan",
-    "Agent IA BTP",
-    "Automatisation Devis",
-    "Gestion Chantier",
+    "Devis réparation informatique",
+    "Facture réparateur PC",
+    "Agent IA réparation",
+    "Devis WhatsApp informatique",
+    "Gestion réparateur à domicile",
   ],
   links: {
-    email: "contact@devisflow.fr",
-    twitter: "https://twitter.com/devisflow",
+    email: "contact@repairflow.fr",
+    twitter: "https://twitter.com/repairflow",
     github: "https://github.com/Johra444",
   },
   nav: {
@@ -56,17 +56,15 @@ export const siteConfig = {
   hero: {
     badgeIcon: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="dark:fill-white fill-[#364153]">
-        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-        <polyline points="14 2 14 8 20 8" />
-        <line x1="16" y1="13" x2="8" y2="13" />
-        <line x1="16" y1="17" x2="8" y2="17" />
-        <polyline points="10 9 9 9 8 9" />
+        <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+        <line x1="8" y1="21" x2="16" y2="21" />
+        <line x1="12" y1="17" x2="12" y2="21" />
       </svg>
     ),
-    badge: "Nouveau — Générez vos devis par WhatsApp",
-    title: "Votre agent IA pour devis et factures BTP",
+    badge: "Nouveau — Devis par WhatsApp en 30 secondes",
+    title: "Votre agent IA pour devis et factures réparation info",
     description:
-      "Envoyez un message vocal ou texte, recevez un devis PDF professionnel en 30 secondes. Conçu pour les artisans et PME du bâtiment.",
+      "Votre client vous envoie un message : \"PC qui démarre plus, écran cassé\". Vous répondez, RepairFlow génère le devis professionnel. Envoi auto, relances incluses.",
     cta: {
       primary: {
         text: "Essayer Gratuitement",
@@ -80,31 +78,31 @@ export const siteConfig = {
   },
   companyShowcase: {
     companyLogos: [
-      { id: 1, name: "Bouygues Construction", logo: <span className="text-xl font-bold tracking-tight dark:text-white text-black">BOUYGUES</span> },
-      { id: 2, name: "Vinci", logo: <span className="text-xl font-bold tracking-tight dark:text-white text-black">VINCI</span> },
-      { id: 3, name: "Eiffage", logo: <span className="text-xl font-bold tracking-tight dark:text-white text-black">EIFFAGE</span> },
-      { id: 4, name: "SCA", logo: <span className="text-xl font-bold tracking-tight dark:text-white text-black">SCA</span> },
-      { id: 5, name: "FFB", logo: <span className="text-xl font-bold tracking-tight dark:text-white text-black">FFB</span> },
+      { id: 1, name: "Microchoix", logo: <span className="text-xl font-bold tracking-tight dark:text-white text-black">MICROCHOIX</span> },
+      { id: 2, name: "LDLC", logo: <span className="text-xl font-bold tracking-tight dark:text-white text-black">LDLC</span> },
+      { id: 3, name: "Materiel.net", logo: <span className="text-xl font-bold tracking-tight dark:text-white text-black">MATÉRIEL.NET</span> },
+      { id: 4, name: "CDiscount", logo: <span className="text-xl font-bold tracking-tight dark:text-white text-black">CDISCOUNT</span> },
+      { id: 5, name: "FNAC", logo: <span className="text-xl font-bold tracking-tight dark:text-white text-black">FNAC</span> },
     ],
   },
   featureSection: {
-    title: "Simple. Rapide. Conforme.",
+    title: "Simple. Rapide. Professionnel.",
     description:
-      "Découvrez comment DevisFlow transforme votre description en devis professionnel en 4 étapes simples.",
+      "Découvrez comment RepairFlow transforme un message WhatsApp en devis de réparation conforme en 4 étapes.",
     items: [
       {
         id: 1,
-        title: "Décrivez le chantier",
+        title: "Le client décrit la panne",
         content:
-          "Envoyez un message vocal ou texte via WhatsApp : \"Devis pour Mme Dupont, 30m² carrelage salle de bain, matériaux fournis\". C'est tout.",
+          "\"Bonjour, mon PC Lenovo ne démarre plus depuis hier, écran bleu\". Votre client vous envoie un WhatsApp, SMS ou email. Pas besoin de formulaire, pas besoin d'application.",
         image:
-          "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=2070&auto=format&fit=crop",
       },
       {
         id: 2,
         title: "L'IA génère le devis",
         content:
-          "DevisFlow analyse votre demande, calcule les quantités, applique les prix DTU et génère un devis PDF conforme avec toutes les mentions légales.",
+          "RepairFlow identifie la panne (écran, carte mère, SSD, virus...), applique vos tarifs et génère un devis PDF professionnel avec diagnostic, pièces et main d'œuvre détaillés.",
         image:
           "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=500&auto=format&fit=crop&q=60",
       },
@@ -112,64 +110,64 @@ export const siteConfig = {
         id: 3,
         title: "Envoi et relances automatiques",
         content:
-          "Le devis est envoyé au client par email ou SMS. Si pas de réponse sous 7 jours, une relance polie part automatiquement. Vous ne perdez plus jamais un chantier.",
+          "Le devis part en PDF par WhatsApp ou email. Si le client ne répond pas sous 48h, une relance polie : \"Souhaitez-vous que je procède à la réparation ?\" Vous ne perdez plus de clients.",
         image:
           "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=500&auto=format&fit=crop&q=60",
       },
       {
         id: 4,
-        title: "Devis accepté → Facture auto",
+        title: "Réparation faite → Facture auto",
         content:
-          "Dès que le client valide, une facture d'acompte est générée. Les factures de situation et le solde suivent automatiquement à chaque étape du chantier.",
+          "Dès que vous marquez l'intervention terminée, la facture est générée avec les détails (pièces remplacées, main d'œuvre, garantie). Export comptable inclus.",
         image:
           "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60",
       },
     ],
   },
   bentoSection: {
-    title: "Votre assistant BTP intelligent",
+    title: "Votre assistant réparation intelligent",
     description:
-      "Demandez à votre agent IA de gérer vos devis, factures et relances pendant que vous construisez.",
+      "Demandez à votre agent IA de gérer vos devis, factures et relances pendant que vous réparez.",
     items: [
       {
         id: 1,
         content: <FirstBentoAnimation />,
-        title: "Génération de devis instantanée",
+        title: "Devis instantané par message",
         description:
-          "Parlez ou écrivez naturellement. L'IA comprend les termes BTP, applique les bons prix unitaires et génère un devis PDF professionnel en 30 secondes.",
+          "Le client écrit \"écran iPhone 13 cassé\". L'IA comprend le modèle, applique le prix de la pièce + main d'œuvre et génère le devis. Pas de saisie manuelle.",
       },
       {
         id: 2,
         content: <SecondBentoAnimation />,
-        title: "Intégration WhatsApp & Email",
+        title: "Intégration WhatsApp & SMS",
         description:
-          "Envoyez vos demandes directement par WhatsApp, SMS ou email. Aucune application à installer, aucun mot de passe à retenir.",
+          "Vos clients vous contactent déjà par WhatsApp. Pas besoin de les faire changer. RepairFlow s'intègre directement dans votre conversation.",
       },
       {
         id: 3,
         content: (
           <ThirdBentoAnimation
-            data={[15, 28, 42, 58, 72, 85, 95]}
-            toolTipValues={[3, 8, 15, 25, 38, 52, 68]}
+            data={[10, 22, 38, 55, 70, 82, 94]}
+            toolTipValues={[2, 6, 12, 20, 31, 45, 62]}
           />
         ),
-        title: "Tableau de bord en temps réel",
+        title: "Tableau de bord réparations",
         description:
-          "Suivez vos devis envoyés, acceptés, relancés et facturés. Visualisez votre chiffre d'affaires prévisionnel et votre taux de conversion.",
+          "Suivez vos devis envoyés, acceptés, en cours et terminés. Visualisez votre CA du mois, vos pannes les plus fréquentes et votre taux de conversion.",
       },
       {
         id: 4,
         content: <FourthBentoAnimation once={false} />,
         title: "Relances automatiques",
         description:
-          "Configurez vos relances (7j, 14j, 30j) et laissez DevisFlow relancer vos clients. Vous récupérez des chantiers que vous auriez perdus.",
+          "48h sans réponse ? RepairFlow relance poliment. 7 jours ? Nouvelle relance. Vous récupérez des réparations que vous auriez perdues par oubli.",
       },
     ],
   },
   benefits: [
     {
       id: 1,
-      text: "Gagnez 5 à 10h par semaine sur vos devis.",
+      text: "Gagnez 5h par semaine sur vos devis et factures.",
       image: "/Device-6.png",
     },
     {
@@ -179,19 +177,19 @@ export const siteConfig = {
     },
     {
       id: 3,
-      text: "Envoyez des devis professionnels conformes à chaque fois.",
+      text: "Envoyez des devis pro qui rassurent vos clients.",
       image: "/Device-8.png",
     },
     {
       id: 4,
-      text: "Suivez votre activité en un coup d'œil depuis votre téléphone.",
+      text: "Suivez toutes vos réparations depuis votre téléphone.",
       image: "/Device-1.png",
     },
   ],
   growthSection: {
-    title: "Conçu pour les artisans du BTP",
+    title: "Conçu pour les réparateurs info",
     description:
-      "DevisFlow connaît les prix DTU, les mentions obligatoires et les spécificités du bâtiment. Pas un outil générique — un agent IA spécialisé BTP.",
+      "RepairFlow connaît les pannes courantes, les prix des pièces et les spécificités de la réparation à domicile. Pas un outil générique — un agent IA spécialisé réparation.",
     items: [
       {
         id: 1,
@@ -229,9 +227,9 @@ export const siteConfig = {
             </motion.div>
           </div>
         ),
-        title: "Conformité légale garantie",
+        title: "Base de prix pièces intégrée",
         description:
-          "TVA, retenue de garantie, mentions obligatoires, conditions de paiement — chaque devis est conforme à la réglementation BTP française.",
+          "Écrans, SSD, RAM, cartes mères, batteries — RepairFlow connaît les prix des pièces les plus courantes par marque et modèle. Vous personnalisez vos propres tarifs.",
       },
       {
         id: 2,
@@ -240,39 +238,39 @@ export const siteConfig = {
             <Globe className="top-28" />
           </div>
         ),
-        title: "Pour tous les corps de métier",
+        title: "Multi-appareils",
         description:
-          "Maçon, plombier, électricien, carreleur, peintre, couvreur, menuisier — DevisFlow connaît les spécificités de chaque métier et les prix associés.",
+          "PC, Mac, iPhone, Samsung, tablette, console, imprimante — RepairFlow gère tous les types d'appareils et adapte le devis en fonction.",
       },
     ],
   },
   quoteSection: {
     quote:
-      "DevisFlow a transformé mon activité. Avant, je passais mes soirées à faire mes devis sur Word. Maintenant j'envoie un message vocal sur le chantier et le devis part dans la minute. J'ai récupéré 3 chantiers grâce aux relances automatiques.",
+      "Avant RepairFlow, je perdais 2-3 clients par semaine parce que j'oubliais de relancer. Maintenant j'envoie un vocal sur WhatsApp entre deux réparations et le devis part tout seul. J'ai récupéré 400€ de réparations la première semaine juste avec les relances auto.",
     author: {
-      name: "Thomas Martin",
-      role: "Carreleur, Artisan BTP — Toulouse",
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
+      name: "Mickaël Fernandez",
+      role: "Réparateur informatique indépendant — Nantes",
+      image: "https://randomuser.me/api/portraits/men/36.jpg",
     },
   },
   pricing: {
-    title: "Des tarifs pensés pour les artisans",
+    title: "Des tarifs pensés pour les réparateurs",
     description:
       "Commencez gratuitement. Aucune carte bancaire requise. Résiliez quand vous voulez.",
     pricingItems: [
       {
-        name: "Artisan",
+        name: "Débutant",
         href: "#",
         price: "0€",
         period: "mois",
         yearlyPrice: "0€",
         features: [
-          "3 devis par mois",
+          "5 devis par mois",
           "Modèles PDF de base",
           "Envoi par email",
           "Support par chat",
         ],
-        description: "Pour tester DevisFlow sur vos premiers chantiers",
+        description: "Pour tester RepairFlow sur vos premières réparations",
         buttonText: "Commencer Gratuitement",
         buttonColor: "bg-accent text-primary",
         isPopular: false,
@@ -280,36 +278,37 @@ export const siteConfig = {
       {
         name: "Pro",
         href: "#",
-        price: "29€",
+        price: "19€",
         period: "mois",
-        yearlyPrice: "290€",
+        yearlyPrice: "190€",
         features: [
           "Devis et factures illimités",
           "Envoi WhatsApp + Email + SMS",
-          "Relances automatiques (7j, 14j, 30j)",
+          "Relances automatiques (48h, 7j, 14j)",
+          "Base de prix pièces intégrée",
           "Tableau de bord complet",
-          "Base de prix BTP intégrée",
-          "Export comptable (Sage, EBP)",
+          "Export comptable (Sage, EBP, Tiime)",
           "Support prioritaire",
         ],
-        description: "Pour les artisans et TPE qui veulent gagner du temps",
+        description: "Pour les réparateurs indépendants qui veulent gagner du temps",
         buttonText: "Essayer 14 jours gratuits",
         buttonColor: "bg-secondary text-white",
         isPopular: true,
       },
       {
-        name: "PME",
+        name: "Atelier",
         href: "#",
-        price: "79€",
+        price: "49€",
         period: "mois",
-        yearlyPrice: "790€",
+        yearlyPrice: "490€",
         features: [
           "Tout le plan Pro",
-          "Jusqu'à 10 utilisateurs",
-          "Multi-chantiers",
-          "Rapports de rentabilité",
+          "Jusqu'à 5 utilisateurs",
+          "Multi-points de retrait",
+          "Suivi stock pièces",
+          "Rapports de rentabilité par type de panne",
         ],
-        description: "Pour les PME BTP avec plusieurs collaborateurs",
+        description: "Pour les ateliers avec plusieurs techniciens",
         buttonText: "Contacter l'équipe",
         buttonColor: "bg-primary text-primary-foreground",
         isPopular: false,
@@ -319,105 +318,105 @@ export const siteConfig = {
   testimonials: [
     {
       id: "1",
-      name: "Thomas Martin",
-      role: "Carreleur — Toulouse",
-      img: "https://randomuser.me/api/portraits/men/32.jpg",
+      name: "Mickaël Fernandez",
+      role: "Réparateur info indépendant — Nantes",
+      img: "https://randomuser.me/api/portraits/men/36.jpg",
       description: (
         <p>
-          Avant DevisFlow, je passais mes soirées sur Word. Maintenant
-          <Highlight>j'envoie un vocal sur le chantier et le devis part dans la minute.</Highlight>{" "}
-          J'ai récupéré 3 chantiers grâce aux relances auto.
+          Avant, je perdais 2-3 clients/semaine par oubli de relance.
+          <Highlight>La première semaine, j'ai récupéré 400€ de réparations grâce aux relances auto.</Highlight>{" "}
+          Le jeu en vaut la chandelle.
         </p>
       ),
     },
     {
       id: "2",
-      name: "Sophie Leroy",
-      role: "Plombière — Lyon",
-      img: "https://randomuser.me/api/portraits/women/44.jpg",
+      name: "Sarah Bouchard",
+      role: "Réparatrice smartphone — Lyon",
+      img: "https://randomuser.me/api/portraits/women/28.jpg",
       description: (
         <p>
-          En tant que femme dans le BTP, je voulais un outil pro pour mes devis.
-          <Highlight>DevisFlow m'a fait gagner 8h par semaine.</Highlight>{" "}
-          Mes clients prennent mes devis plus au sérieux maintenant.
+          Mes clients m'envoient des photos d'écrans cassés sur WhatsApp.
+          <Highlight>Je réponds, RepairFlow génère le devis. 30 secondes chrono.</Highlight>{" "}
+          Avant c'était 15 min sur Word.
         </p>
       ),
     },
     {
       id: "3",
-      name: "Karim Benziane",
-      role: "Maçon — Marseille",
-      img: "https://randomuser.me/api/portraits/men/55.jpg",
+      name: "David Nguyen",
+      role: "Atelier info — Paris 13e",
+      img: "https://randomuser.me/api/portraits/men/52.jpg",
       description: (
         <p>
-          Je suis nul en informatique mais DevisFlow c'est comme envoyer un SMS.
-          <Highlight>Mon fils m'a montré une fois, c'est tout.</Highlight>{" "}
-          29€/mois pour gagner 10h, c'est rentable dès le premier devis.
+          J'ai 3 techniciens. Chacun envoie ses devis depuis son téléphone.
+          <Highlight>On est passés de 20 à 45 devis par semaine sans embaucher.</Highlight>{" "}
+          Le tableau de bord me donne le CA en temps réel.
         </p>
       ),
     },
     {
       id: "4",
-      name: "Marie-Claire Dubois",
-      role: "Peintre — Nantes",
-      img: "https://randomuser.me/api/portraits/women/68.jpg",
+      name: "Fatima Benali",
+      role: "Réparatrice PC à domicile — Toulouse",
+      img: "https://randomuser.me/api/portraits/women/45.jpg",
       description: (
         <p>
-          Les relances automatiques c'est le game changer.
-          <Highlight>J'ai récupéré 4 500€ de chantiers oubliés</Highlight>{" "}
-          le premier mois. Avant j'osais pas relancer, maintenant c'est fait tout seul.
+          Je me déplace chez le client. Pas le temps de faire des devis sur place.
+          <Highlight>Je décris la panne en vocal, RepairFlow fait le devis pendant que je conduis.</Highlight>{" "}
+          Le client a son devis avant même que je rentre.
         </p>
       ),
     },
     {
       id: "5",
-      name: "Pierre-Yves Gaudin",
-      role: "Électricien — Bordeaux",
-      img: "https://randomuser.me/api/portraits/men/41.jpg",
+      name: "Julien Roche",
+      role: "Réparateur console gaming — Bordeaux",
+      img: "https://randomuser.me/api/portraits/men/29.jpg",
       description: (
         <p>
-          J'utilise DevisFlow depuis 3 mois.
-          <Highlight>Mon taux de conversion devis a augmenté de 35%.</Highlight>{" "}
-          Les devis sont plus pro, mieux formatés, et les clients répondent plus vite.
+          Les gamers sont pressés, ils veulent un devis tout de suite.
+          <Highlight>Depuis RepairFlow, mon taux de conversion a augmenté de 40%.</Highlight>{" "}
+          Le devis pro rassure le client.
         </p>
       ),
     },
     {
       id: "6",
-      name: "Fatima Zahra",
-      role: "Couvreuse — Lille",
-      img: "https://randomuser.me/api/portraits/women/29.jpg",
+      name: "Nadia Khelifi",
+      role: "Tech support PME — Lille",
+      img: "https://randomuser.me/api/portraits/women/33.jpg",
       description: (
         <p>
-          Le fait que DevisFlow connaisse les prix du DTU c'est incroyable.
-          <Highlight>Plus besoin de chercher les prix unitaires dans des tableaux Excel.</Highlight>{" "}
-          Je décris le chantier et c'est fait.
+          Je gère la maintenance de 15 petites entreprises.
+          <Highlight>Les devis récurrents se génèrent automatiquement chaque mois.</Highlight>{" "}
+          Plus besoin de relancer chaque client manuellement.
         </p>
       ),
     },
     {
       id: "7",
-      name: "Julien Moreau",
-      role: "Menuisier — Strasbourg",
-      img: "https://randomuser.me/api/portraits/men/63.jpg",
+      name: "Christophe Morel",
+      role: "Réparateur Apple indépendant — Nice",
+      img: "https://randomuser.me/api/portraits/men/44.jpg",
       description: (
         <p>
-          Le passage au forfait annuel m'a fait économiser 2 mois.
-          <Highlight>290€/an pour un outil qui me fait gagner 40h/mois,</Highlight>{" "}
-          c'est le meilleur investissement de mon activité.
+          La base de prix pièces est un game changer.
+          <Highlight>Je tape \"iPhone 14 écran\" et le prix de la pièce + main d'œuvre est déjà calculé.</Highlight>{" "}
+          J'ajuste et c'est parti.
         </p>
       ),
     },
     {
       id: "8",
-      name: "Nathalie Petit",
-      role: "Architecte d'intérieur — Paris",
-      img: "https://randomuser.me/api/portraits/women/17.jpg",
+      name: "Amandine Petit",
+      role: "Réparatrice à domicile — Rennes",
+      img: "https://randomuser.me/api/portraits/women/61.jpg",
       description: (
         <p>
-          J'utilise DevisFlow pour mes prestations de rénovation.
-          <Highlight>Le lien WhatsApp simplifie tout l'échange avec le client.</Highlight>{" "}
-          Il valide le devis direct sur son téléphone.
+          Le plan gratuit m'a permis de tester sans risque.
+          <Highlight>Après 2 semaines j'étais convaincue, je suis passée au Pro.</Highlight>{" "}
+          19€/mois pour gagner 5h/semaine, c'est donné.
         </p>
       ),
     },
@@ -425,55 +424,55 @@ export const siteConfig = {
   faqSection: {
     title: "Questions Fréquentes",
     description:
-      "Tout ce que vous devez savoir sur DevisFlow. Une question ? Contactez-nous.",
+      "Tout ce que vous devez savoir sur RepairFlow. Une question ? Contactez-nous.",
     faQitems: [
       {
         id: 1,
-        question: "Comment fonctionne DevisFlow ?",
+        question: "Comment fonctionne RepairFlow ?",
         answer:
-          "Vous envoyez un message (texte ou vocal) via WhatsApp, SMS ou email décrivant le chantier. L'IA analyse votre demande, identifie les postes de travaux, applique les prix DTU et génère un devis PDF professionnel conforme. Le devis est envoyé au client et les relances se font automatiquement.",
+          "Votre client vous envoie un message WhatsApp décrivant la panne. Vous répondez, et RepairFlow analyse la demande, identifie le type de réparation (écran, SSD, virus...), applique vos tarifs et génère un devis PDF professionnel que vous envoyez au client en un clic.",
       },
       {
         id: 2,
-        question: "DevisFlow connaît-il les prix du BTP ?",
+        question: "RepairFlow connaît-il les prix des pièces ?",
         answer:
-          "Oui ! DevisFlow intègre une base de données de prix BTP basée sur les référentiels DTU et les prix moyens du marché français. Vous pouvez aussi personnaliser vos propres prix unitaires pour coller à votre activité.",
+          "Oui ! RepairFlow intègre une base de données des pièces les plus courantes (écrans, SSD, RAM, batteries) par marque et modèle. Vous pouvez aussi personnaliser vos propres prix et marges pour coller à votre activité.",
       },
       {
         id: 3,
-        question: "Les devis sont-ils conformes à la loi ?",
+        question: "Ça marche comment sur le terrain ?",
         answer:
-          "Oui. Chaque devis généré inclut toutes les mentions obligatoires : TVA, retenue de garantie, conditions de paiement, pénalités de retard, numéro de SIRET, assurance décennale, et toutes les mentions légales requises pour les travaux BTP.",
+          "RepairFlow fonctionne via WhatsApp, donc depuis votre téléphone. Vous êtes chez un client, vous envoyez un vocal décrivant la panne, et le devis se génère. Pas besoin d'installer une application, pas besoin de connexion internet permanente (le devis se génère dès que vous avez du réseau).",
       },
       {
         id: 4,
-        question: "Puis-je utiliser DevisFlow sur chantier ?",
+        question: "Et si le client veut négocier le prix ?",
         answer:
-          "Absolument ! DevisFlow fonctionne via WhatsApp, donc depuis votre téléphone. Pas besoin d'installer une application. Vous pouvez envoyer un devis depuis n'importe où, même sans connexion internet (il sera traité dès que vous aurez du réseau).",
+          "Pas de problème. Répondez au message WhatsApp en décrivant la modification (\"Finalement juste le changement d'écran, pas la batterie\") et RepairFlow régénère le devis modifié instantanément. Le client reçoit la nouvelle version.",
       },
       {
         id: 5,
-        question: "Et si je veux modifier un devis ?",
+        question: "Les devis sont-ils conformes ?",
         answer:
-          "Pas de problème. Répondez au message WhatsApp en décrivant la modification souhaitée (\"Ajoute 10m² de faïence\" ou \"Retire la fourniture de peinture\") et DevisFlow régénère le devis modifié instantanément.",
+          "Oui. Chaque devis inclut : description de la panne, diagnostic, pièces détaillées, main d'œuvre, TVA (si applicable), conditions de garantie, et vos coordonnées professionnelles. Un devis qui rassure le client et vous protège.",
       },
       {
         id: 6,
         question: "Combien de temps ça me fait gagner ?",
         answer:
-          "En moyenne, nos utilisateurs gagnent 5 à 10 heures par semaine sur la gestion de leurs devis. Un devis qui prenait 30 à 60 minutes est généré en 30 secondes. Les relances automatiques vous font récupérer des chantiers que vous auriez perdus par oubli.",
+          "En moyenne, nos utilisateurs gagnent 5 à 8 heures par semaine. Un devis qui prenait 10-15 minutes est généré en 30 secondes. Les relances automatiques vous font récupérer 2 à 4 réparations par semaine que vous auriez perdues par oubli.",
       },
     ],
   },
   ctaSection: {
     id: "cta",
-    title: "Arrêtez de perdre du temps sur vos devis",
+    title: "Arrêtez de perdre des réparations",
     backgroundImage: "/agent-cta-background.png",
     button: {
       text: "Essayer Gratuitement — Aucune CB requise",
       href: "#",
     },
-    subtext: "3 devis gratuits offerts • Configuration en 2 minutes • Résiliez quand vous voulez",
+    subtext: "5 devis gratuits offerts • Configuration en 2 minutes • Résiliez quand vous voulez",
   },
   footerLinks: [
     {
@@ -488,8 +487,8 @@ export const siteConfig = {
     {
       title: "Ressources",
       links: [
-        { id: 5, title: "Blog BTP", url: "#" },
-        { id: 6, title: "Guide du devis BTP", url: "#" },
+        { id: 5, title: "Blog réparation", url: "#" },
+        { id: 6, title: "Guide du devis info", url: "#" },
         { id: 7, title: "FAQ", url: "#" },
         { id: 8, title: "Support", url: "#" },
       ],
